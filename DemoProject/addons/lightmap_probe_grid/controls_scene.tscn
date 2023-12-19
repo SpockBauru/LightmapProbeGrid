@@ -1,0 +1,198 @@
+[gd_scene load_steps=3 format=3 uid="uid://xp1820rv0uy"]
+
+[ext_resource type="Script" path="res://addons/lightmap_probe_grid/UI.gd" id="1_4a60v"]
+[ext_resource type="StyleBox" uid="uid://4nfudftbnexo" path="res://addons/lightmap_probe_grid/style_box_flat.tres" id="2_rdj4j"]
+
+[node name="RootContainer" type="VBoxContainer" node_paths=PackedStringArray("probes_x", "probes_y", "probes_z", "planned_probes", "generate_button", "far_distance", "object_size")]
+offset_right = 257.0
+offset_bottom = 346.0
+script = ExtResource("1_4a60v")
+probes_x = NodePath("ProbesContainer/ProbesX")
+probes_y = NodePath("ProbesContainer/ProbesY")
+probes_z = NodePath("ProbesContainer/ProbesZ")
+planned_probes = NodePath("PlannedLabel")
+generate_button = NodePath("GenerateProbes")
+far_distance = NodePath("CutFarProbesContainer/Distance")
+object_size = NodePath("CutInsideContainer/Size")
+
+[node name="ProbesLabel" type="Label" parent="."]
+clip_contents = true
+layout_mode = 2
+tooltip_text = "Number of probes on each axis"
+mouse_filter = 0
+text = "Number of Probes"
+vertical_alignment = 1
+
+[node name="ProbesContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="ProbesX" type="SpinBox" parent="ProbesContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "Minimum is 2"
+min_value = 2.0
+max_value = 250.0
+value = 2.0
+alignment = 2
+prefix = "x:"
+select_all_on_focus = true
+
+[node name="ProbesY" type="SpinBox" parent="ProbesContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "Minimum is 2"
+min_value = 2.0
+max_value = 250.0
+value = 2.0
+alignment = 2
+prefix = "y:"
+select_all_on_focus = true
+
+[node name="ProbesZ" type="SpinBox" parent="ProbesContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "Minimum is 2"
+min_value = 2.0
+max_value = 250.0
+value = 2.0
+alignment = 2
+prefix = "z:"
+select_all_on_focus = true
+
+[node name="PlannedLabel" type="RichTextLabel" parent="."]
+layout_mode = 2
+tooltip_text = "Maximum is xxxx"
+bbcode_enabled = true
+text = "Planned Probes: xxxx"
+fit_content = true
+
+[node name="GenerateProbes" type="Button" parent="."]
+layout_mode = 2
+theme_override_styles/normal = ExtResource("2_rdj4j")
+text = "Generate Probes"
+
+[node name="HSeparator" type="HSeparator" parent="."]
+layout_mode = 2
+
+[node name="ObscuredLabel" type="Label" parent="."]
+layout_mode = 2
+tooltip_text = "Test from center to each probe, 
+and cut the probe if the path is obstructed by an object.
+
+Use Collision Mask to filter objects."
+mouse_filter = 0
+text = "Probes obscured from center"
+vertical_alignment = 1
+
+[node name="Cut by Mask" type="Button" parent="."]
+layout_mode = 2
+tooltip_text = "Test from center to each probe, 
+and cut the probe if the path is obstructed by an object.
+
+Use Collision Mask to filter objects."
+theme_override_styles/normal = ExtResource("2_rdj4j")
+text = "Cut Obstructed Probes"
+
+[node name="HSeparator2" type="HSeparator" parent="."]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+tooltip_text = "For each probe, test if there is any object within an Max distance. 
+If there isn't any object the probe is cut.
+
+Use Collision Mask to filter objects."
+mouse_filter = 0
+text = "Probes far from any object"
+
+[node name="CutFarProbesContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+alignment = 1
+
+[node name="DistanceLabel" type="Label" parent="CutFarProbesContainer"]
+custom_minimum_size = Vector2(67, 0)
+layout_mode = 2
+tooltip_text = "The distance from the probe that objects will be detected"
+mouse_filter = 0
+text = "Max distance"
+
+[node name="Distance" type="SpinBox" parent="CutFarProbesContainer"]
+layout_mode = 2
+tooltip_text = "The distance from the probe that objects will be detected"
+step = 0.0
+value = 1.0
+allow_greater = true
+suffix = "m"
+custom_arrow_step = 1.0
+select_all_on_focus = true
+
+[node name="CutFarProbes" type="Button" parent="."]
+custom_minimum_size = Vector2(148, 0)
+layout_mode = 2
+tooltip_text = "For each probe, test if there is any object within an Max distance. 
+If there isn't any object the probe is cut.
+
+Use Collision Mask to filter objects."
+theme_override_styles/normal = ExtResource("2_rdj4j")
+text = "Cut Far Probes"
+
+[node name="HSeparator3" type="HSeparator" parent="."]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 2
+tooltip_text = "For each probe, test if the same object is intercepted by the yellow lines.
+
+If the same object is detected 4 times or more, 
+the probe is considered to be inside and will be cut.
+
+Only 4 lines are tested instead of 6 because is common for
+objects to not have 2 faces, like pillars.
+
+Use Collision Mask to filter objects."
+mouse_filter = 0
+text = "Probes inside objects"
+
+[node name="CutInsideContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+alignment = 1
+
+[node name="SizeLabel" type="Label" parent="CutInsideContainer"]
+layout_mode = 2
+tooltip_text = "Distance tested from the probes (size of yellow lines)"
+mouse_filter = 0
+text = "Max object size"
+
+[node name="Size" type="SpinBox" parent="CutInsideContainer"]
+layout_mode = 2
+tooltip_text = "Distance tested from the probes (size of yellow lines)"
+step = 0.0
+value = 1.0
+allow_greater = true
+suffix = "m"
+custom_arrow_step = 1.0
+
+[node name="CutInsideObjects" type="Button" parent="."]
+custom_minimum_size = Vector2(148, 0)
+layout_mode = 2
+tooltip_text = "For each probe, test if the same object is intercepted by the yellow lines.
+
+If the same object is detected 4 times or more, 
+the probe is considered to be inside and will be cut.
+
+Only 4 lines are tested instead of 6 because is common for
+objects to not have 2 faces, like pillars.
+
+Use Collision Mask to filter objects."
+theme_override_styles/normal = ExtResource("2_rdj4j")
+text = "Cut Inside Objects"
+
+[connection signal="value_changed" from="ProbesContainer/ProbesX" to="." method="_set_probes_number"]
+[connection signal="value_changed" from="ProbesContainer/ProbesY" to="." method="_set_probes_number"]
+[connection signal="value_changed" from="ProbesContainer/ProbesZ" to="." method="_set_probes_number"]
+[connection signal="pressed" from="GenerateProbes" to="." method="_on_generate_probes_pressed"]
+[connection signal="pressed" from="Cut by Mask" to="." method="_on_cut_by_mask_pressed"]
+[connection signal="value_changed" from="CutFarProbesContainer/Distance" to="." method="_set_far_distance"]
+[connection signal="pressed" from="CutFarProbes" to="." method="_cut_far_probes"]
+[connection signal="value_changed" from="CutInsideContainer/Size" to="." method="_set_object_size"]
+[connection signal="pressed" from="CutInsideObjects" to="." method="_cut_inside"]

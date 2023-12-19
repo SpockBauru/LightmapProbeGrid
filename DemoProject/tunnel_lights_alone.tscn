@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bcxprijmrhsyj"]
+
+[node name="TunnelLights" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -88.2165, 7.60773, -0.706919)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0.451117)
+light_energy = 10.0
+light_indirect_energy = 10.0
+light_bake_mode = 1
+shadow_enabled = true
+spot_range = 11.713
+spot_angle = 46.1961
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 95.1286, 0, 0.451117)
+light_energy = 10.0
+light_indirect_energy = 10.0
+light_bake_mode = 1
+shadow_enabled = true
+spot_range = 11.713
+spot_angle = 46.1961
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -95.1286, 0, 0.451117)
+light_energy = 10.0
+light_indirect_energy = 10.0
+light_bake_mode = 1
+shadow_enabled = true
+spot_range = 11.713
+spot_angle = 46.1961

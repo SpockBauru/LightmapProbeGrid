@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dphn442gxhupy"]
+
+[ext_resource type="Texture2D" uid="uid://b1733xyn6x5y7" path="res://Godette/Godette_baseColor.png" id="1_0tdsi"]
+
+[resource]
+albedo_texture = ExtResource("1_0tdsi")
