@@ -1,22 +1,38 @@
-Textures on tunnel are provided by https://wildtextures.com/
+Character Godette is provided under Creative Commons CC0 1.0 Universal License.
+https://creativecommons.org/publicdomain/zero/1.0/
+Based on Juan Linietsky Tweet, made by Andrea Calabró:
+https://twitter.com/reduzio/status/958305883976536064
+3D model by Pablo Dobarro:
+https://cloud.blender.org/p/gallery/60b7a091e781884330b23588
+Rigged by zahlenmaler:
+https://sketchfab.com/3d-models/godette-rigged-dd05b69799a2438e97c90d166f6e416a
+Reduction of Level of Detail and Rigged for Mixamo by SpockBauru
 
-All textures at wildtextures.com are completely free for both, personal and commercial use, however you can’t:
+Godette animations are provided by https://www.mixamo.com/
+Mixamo online animation services are currently in a limited duration technology preview, and during
+that preview they are available for free, with no licensing or royalty fees, for unlimited
+commercial or non commercial use. You can use the auto-rigger, characters and animations in any type
+of creative project.
 
-host textures for download on any other website or server,
-direct link to texture file from any other website ( however you can link to texture page ),
-sell them as a stock materials,
+Terrain and Tunnel meshes are provided by SpockBauru under the Creative Commons CC0 1.0 Universal 
+License.
+https://creativecommons.org/publicdomain/zero/1.0/
+
+Terrain textures are provided by https://polyhaven.com/ under the Creative Commons CC0 1.0 Universal 
+License.
+https://creativecommons.org/publicdomain/zero/1.0/
+
+Tunnel textures are provided by https://wildtextures.com/
+All textures at wildtextures.com are completely free for both, personal and commercial use, however
+you can’t:
+host textures for download on any other website or server, direct link to texture file from any 
+other website ( however you can link to texture page ), sell them as a stock materials,
 … it would be great if You:
-link back to the website,
-comment & share your project / ideas with others.
-I can’t think about anything else. If you are not sure, you are not hurting my heart, just ask: tomek@grabowiecki.pl 🙂
+link back to the website, comment & share your project / ideas with others.
+I can’t think about anything else. If you are not sure, you are not hurting my heart, just ask: 
+tomek@grabowiecki.pl 🙂
 
 Big Stone Blocks Wall in this project was edited, here the original 4k color texture:
 https://wildtextures.com/free-textures/seamless-cracking-asphalt-texture/
-
 Cracking Asphalt in this project was edited, here the original 4k color texture:
 https://wildtextures.com/free-textures/big-stone-blocks-wall-4k-seamless-texture/
-
-
-Terrain asset provided by SpockBauru under the
-Creative Commons CC0 1.0 Universal License.
-https://creativecommons.org/publicdomain/zero/1.0/deed.en

@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://y8sqbjrhjgag"]
+
+[ext_resource type="Texture2D" uid="uid://bb8c5o44g7jk1" path="res://Trees/tree_01_billboard.png" id="1_3tiqn"]
+
+[resource]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+albedo_texture = ExtResource("1_3tiqn")
+billboard_mode = 2

@@ -1,0 +1,101 @@
+[gd_scene load_steps=6 format=3 uid="uid://hpwo6n675tni"]
+
+[ext_resource type="Texture2D" uid="uid://j48u112bqt6j" path="res://UI/Arrow_Up_Key_Light.png" id="1_hfvlm"]
+[ext_resource type="Texture2D" uid="uid://b3o8eqwv0coxa" path="res://UI/Arrow_Down_Key_Light.png" id="2_n2y1l"]
+[ext_resource type="Texture2D" uid="uid://pimhhhhs06uf" path="res://UI/Arrow_Left_Key_Light.png" id="3_epab7"]
+[ext_resource type="Texture2D" uid="uid://cdowqml4vfiqy" path="res://UI/Arrow_Right_Key_Light.png" id="4_rqd4t"]
+[ext_resource type="Texture2D" uid="uid://d2ioris7xltl6" path="res://UI/Mouse_Simple_Key_Light.png" id="7_i31wf"]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -100.0
+offset_right = 470.0
+offset_bottom = 100.0
+grow_vertical = 0
+scale = Vector2(0.5, 0.5)
+
+[node name="Move" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -200.0
+offset_right = 255.0
+offset_bottom = -158.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 30
+text = "Move"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Up" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 76.0
+offset_top = -174.0
+offset_right = 176.0
+offset_bottom = -74.0
+grow_vertical = 0
+mouse_filter = 2
+texture = ExtResource("1_hfvlm")
+
+[node name="Down" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 75.0
+offset_top = -100.0
+offset_right = 175.0
+grow_vertical = 0
+mouse_filter = 2
+texture = ExtResource("2_n2y1l")
+
+[node name="Left" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -100.0
+offset_right = 100.0
+grow_vertical = 0
+mouse_filter = 2
+texture = ExtResource("3_epab7")
+
+[node name="Right" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 150.0
+offset_top = -100.0
+offset_right = 250.0
+grow_vertical = 0
+mouse_filter = 2
+texture = ExtResource("4_rqd4t")
+
+[node name="Camera" type="Label" parent="."]
+layout_mode = 0
+offset_left = 266.0
+offset_top = 34.0
+offset_right = 378.0
+offset_bottom = 76.0
+theme_override_font_sizes/font_size = 30
+text = "Camera"
+
+[node name="Mouse" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 272.0
+offset_top = -114.0
+offset_right = 372.0
+offset_bottom = -14.0004
+grow_vertical = 0
+texture = ExtResource("7_i31wf")

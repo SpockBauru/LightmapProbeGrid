@@ -1,0 +1,33 @@
+[gd_scene load_steps=8 format=3 uid="uid://6ltajfnykfr8"]
+
+[ext_resource type="PackedScene" uid="uid://dye0pl8gq2a8y" path="res://Trees/tree_01.glb" id="1_2uydd"]
+[ext_resource type="Script" path="res://Scripts/LOD.gd" id="2_fcp76"]
+[ext_resource type="Material" uid="uid://q8bar3k64c24" path="res://Trees/leaves.tres" id="2_vux3u"]
+[ext_resource type="Material" uid="uid://d1q8ejswl84j7" path="res://Trees/bark.tres" id="3_klsik"]
+[ext_resource type="Material" uid="uid://y8sqbjrhjgag" path="res://Trees/billboard.tres" id="5_rgbe0"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_p0n18"]
+radius = 1.02926
+
+[sub_resource type="QuadMesh" id="QuadMesh_2g0gw"]
+material = ExtResource("5_rgbe0")
+size = Vector2(8, 8)
+
+[node name="Tree01" node_paths=PackedStringArray("mesh", "billboard") instance=ExtResource("1_2uydd")]
+script = ExtResource("2_fcp76")
+mesh = NodePath("tree-stylized-05-autumn-brown")
+billboard = NodePath("Billboard")
+
+[node name="tree-stylized-05-autumn-brown" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_vux3u")
+surface_material_override/1 = ExtResource("3_klsik")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.11743, 0)
+shape = SubResource("SphereShape3D_p0n18")
+
+[node name="Billboard" type="MeshInstance3D" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.166477, 3.78711, 0)
+mesh = SubResource("QuadMesh_2g0gw")

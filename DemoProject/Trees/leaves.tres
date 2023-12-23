@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://q8bar3k64c24"]
+
+[ext_resource type="Texture2D" uid="uid://e8um36hfaphh" path="res://Trees/tree-branches-autumn-mix-diffuse2.png" id="1_ywvru"]
+
+[resource]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+cull_mode = 2
+albedo_texture = ExtResource("1_ywvru")

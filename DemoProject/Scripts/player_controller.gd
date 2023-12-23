@@ -14,10 +14,12 @@ var gravity: float = ProjectSettings.get_setting("physics/3d/default_gravity")
 var mouse_visible : bool = false
 
 var is_jumping: bool = false
+var initial_posision: Vector3 = Vector3.ZERO
 
 
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	initial_posision = position
 
 
 func _input(event: InputEvent) -> void:
@@ -40,6 +42,12 @@ func _input(event: InputEvent) -> void:
 		get_viewport().set_input_as_handled()
 
 
+func _process(_delta: float) -> void:
+	# Reset if out of bounds
+	if position.y < -1:
+		position = initial_posision
+
+
 func _physics_process(delta: float) -> void:
 	# Reset animation state
 	animation_tree["parameters/conditions/is_idle"] = false
@@ -54,13 +62,13 @@ func _physics_process(delta: float) -> void:
 		return
 	
 	# Handle jump
-	if Input.is_action_just_pressed("player_jump") and is_on_floor():
+	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = jump_velocity
 		animation_tree["parameters/conditions/is_jumping"] = true
 		return
 	
 	# Get the input direction and handle the movement/deceleration.
-	var input_dir: Vector2 = Input.get_vector("player_left", "player_right", "player_forward", "player_backward")
+	var input_dir: Vector2 = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	
 	# Face the camera direction when player make a input
 	var camera_direction : Vector3 = camera.global_transform.basis.z
@@ -87,7 +95,7 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 	
-	# If is stuck in wall
+	# If stop in the wall
 	if abs(velocity) < Vector3(0.001, 0.001, 0.001):
 		animation_tree["parameters/conditions/is_idle"] = true
 		animation_tree["parameters/conditions/is_running"] = false

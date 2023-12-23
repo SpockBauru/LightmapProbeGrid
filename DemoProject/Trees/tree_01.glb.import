@@ -1,0 +1,57 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dye0pl8gq2a8y"
+path="res://.godot/imported/tree_01.glb-43db1604317f66224d3dc68e7674942b.scn"
+
+[deps]
+
+source_file="res://Trees/tree_01.glb"
+dest_files=["res://.godot/imported/tree_01.glb-43db1604317f66224d3dc68e7674942b.scn"]
+
+[params]
+
+nodes/root_type="Node3D"
+nodes/root_name="Tree01"
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=false
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+import_script/path=""
+_subresources={
+"materials": {
+"@MATERIAL:0": {
+"use_external/enabled": true,
+"use_external/path": "res://Trees/leaves.tres"
+},
+"@MATERIAL:1": {
+"use_external/enabled": true,
+"use_external/path": "res://Trees/bark.tres"
+}
+},
+"meshes": {
+"tree_01_tree-branches-autumn-mix-diffuse_016": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": false,
+"save_to_file/make_streamable": "",
+"save_to_file/path": ""
+}
+}
+}
+gltf/naming_version=1
+gltf/embedded_image_handling=1
