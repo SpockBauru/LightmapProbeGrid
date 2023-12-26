@@ -87,6 +87,8 @@ func _redraw(gizmo: EditorNode3DGizmo) -> void:
 
 # Wait 5 seconds before clear the main script gizmos. If called twice the timer is reset
 func clear_tool_await(box: LightmapProbeGrid):
+	if timer == null:
+		timer = Timer.new()
 	# Add timer to the scene
 	if timer.get_parent() == null:
 		var root_node = EditorInterface.get_edited_scene_root()
