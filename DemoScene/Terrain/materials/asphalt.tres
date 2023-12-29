@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dmbuo5llrwjel"]
+
+[ext_resource type="Texture2D" uid="uid://cqnh33lohk6pw" path="res://DemoScene/Terrain/materials/asphalt/wildtextures_cracked-asphalt-0.5k_Grayscale.png" id="1_dpwlu"]
+
+[resource]
+albedo_color = Color(0.94902, 0.94902, 0.94902, 1)
+albedo_texture = ExtResource("1_dpwlu")
+texture_filter = 5

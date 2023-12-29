@@ -85,7 +85,7 @@ func _redraw(gizmo: EditorNode3DGizmo) -> void:
 		clear_tool_await(box)
 
 
-# Wait 5 seconds before clear the main script gizmos. If called twice the timer is reset
+# Wait 3 seconds before clear the main script gizmos. If called twice the timer is reset
 func clear_tool_await(box: LightmapProbeGrid):
 	if timer == null:
 		timer = Timer.new()
@@ -95,7 +95,7 @@ func clear_tool_await(box: LightmapProbeGrid):
 		root_node.add_child(timer)
 		timer.name = "lightmap_probe_grid_timer"
 	
-	timer.wait_time = 5.0
+	timer.wait_time = 3.0
 	timer.start()
 	
 	if is_awayting:

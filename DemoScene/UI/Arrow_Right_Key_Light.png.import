@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtmcycli3j3j1"
-path="res://.godot/imported/lightmap_probe_grid_icon.svg-71f84c7339e4d62a065aeef79112e123.ctex"
+uid="uid://cdowqml4vfiqy"
+path="res://.godot/imported/Arrow_Right_Key_Light.png-bad0f7cbce29e5981051c502a605d55b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/lightmap_probe_grid/lightmap_probe_grid_icon.svg"
-dest_files=["res://.godot/imported/lightmap_probe_grid_icon.svg-71f84c7339e4d62a065aeef79112e123.ctex"]
+source_file="res://DemoScene/UI/Arrow_Right_Key_Light.png"
+dest_files=["res://.godot/imported/Arrow_Right_Key_Light.png-bad0f7cbce29e5981051c502a605d55b.ctex"]
 
 [params]
 
@@ -31,7 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false
+detect_3d/compress_to=1
