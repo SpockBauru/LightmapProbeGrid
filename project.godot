@@ -14,6 +14,11 @@ config/name="Lightmap Probe Grid"
 run/main_scene="res://DemoScene/Demo_Scene.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=900
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/lightmap_probe_grid/plugin.cfg")
@@ -61,3 +66,7 @@ ui_down={
 
 3d_physics/layer_1="Environment"
 3d_physics/layer_2="Player"
+
+[rendering]
+
+anti_aliasing/quality/msaa_3d=2
