@@ -3,7 +3,7 @@ Create a grid of Lightmap Probes and cut unwanted ones!
 
 LightmapProbeGrid is an extension for [Godot Engine](https://godotengine.org/) that helps on the demanding task of placing Lightmap Probes where LightmapGI fails to do it.
 
-**Disclaimer:** If you are getting the error `scene/3d/lightmap_gi.cpp:529 - Inconsistency found in triangulation...` is because [Godot Issue 82642](https://github.com/godotengine/godot/issues/82642) which cause probes to not be connected correctly and inconsistencies on character lighting.
+**Disclaimer:** If you are getting the error `scene/3d/lightmap_gi.cpp:529 - Inconsistency found in triangulation...` is because [Godot Issue 82642](https://github.com/godotengine/godot/issues/82642) which cause probes to not be connected correctly resulting in inconsistencies on character lighting.
 
 # Index
  * [How to install](#how-to-install)
@@ -19,17 +19,15 @@ LightmapProbeGrid is an extension for [Godot Engine](https://godotengine.org/) t
 
 # How to install
 1) Extract the `addons` folder on the root of your project (`res://`). Other files/folders are optional.
-2) Go to "Project" menu -> "Project Settings" -> "Plugins" tab -> enable "LightmapProbeGrid".
+2) Go to Godot's "Project" menu -> "Project Settings" -> "Plugins" tab -> enable "LightmapProbeGrid".
 3) Restart Godot.
 
 You can also open the `DemoScene` to see how it works.
 
 # Making a grid of Light Probes
-Place the LightmapProbeGrid Node in the scene. It's located at "Add Node" -> Node3D -> LightmapProbeGrid.
-
-Use the handles (red dots) to resize the grid.
-
-In the LightmapProbeGrid Inspector you can set the number of Light Probes on each axis with the minimum of 2. Press "Generate Probes" to apply the settings and place your grid of Light Probes in the Scene.
+- Place the LightmapProbeGrid Node in the scene. It's located at "Add Node" -> Node3D -> LightmapProbeGrid.
+- Use the handles (red dots) to resize the grid.
+- In the LightmapProbeGrid Inspector you can set the number of Light Probes on each axis with the minimum of 2. Press "Generate Probes" to apply the settings and place your grid of Light Probes in the Scene.
 
 Now you can cut unwanted probes with the methods bellow.
 
