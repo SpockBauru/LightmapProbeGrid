@@ -5,6 +5,9 @@ LightmapProbeGrid is an extension for [Godot Engine](https://godotengine.org/) t
 
 **Disclaimer:** If you are getting the error `scene/3d/lightmap_gi.cpp:529 - Inconsistency found in triangulation...` is because [Godot Issue 82642](https://github.com/godotengine/godot/issues/82642) which cause probes to not be connected correctly resulting in inconsistencies on character lighting.
 
+### Video Tutorial
+https://www.youtube.com/watch?v=IdpsFQpvp2I
+
 # Index
  * [How to install](#how-to-install)
  * [Making a grid of Light Probes](#making-a-grid-of-light-probes)
