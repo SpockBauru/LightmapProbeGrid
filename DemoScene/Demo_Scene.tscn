@@ -52,6 +52,7 @@ generate_probes_subdiv = 0
 [node name="LightmapProbeGrid01" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -305.349, 1.1, 0.0784311)
 script = ExtResource("5_678oq")
+visual_cull_mask = 1048573
 size = Vector3(30.2968, 2, 30.4536)
 probes_number = Vector3i(4, 2, 4)
 far_distance = 1.0
@@ -156,6 +157,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.1484, -1, -15.2268)
 [node name="LightmapProbeGrid02" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -89.0277, 3.70086, 0.0261385)
 script = ExtResource("5_678oq")
+visual_cull_mask = 1048573
 size = Vector3(395.798, 6.61881, 13.7928)
 probes_number = Vector3i(51, 3, 3)
 far_distance = 4.0
@@ -1228,6 +1230,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -197.899, -3.30941, -6.8964)
 [node name="LightmapProbeGrid03" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 129.016, 1.1, -0.000730038)
 script = ExtResource("5_678oq")
+visual_cull_mask = 1048573
 size = Vector3(30.3065, 2, 30.3003)
 probes_number = Vector3i(4, 2, 4)
 far_distance = 3.0

@@ -1929,6 +1929,7 @@ bones/64/rotation = Quaternion(-6.00333e-08, -0.0118688, 6.72977e-10, 0.99993)
 bones/64/scale = Vector3(1, 1, 1)
 
 [node name="Character" parent="Armature/Skeleton3D" index="0"]
+layers = 2
 gi_mode = 2
 surface_material_override/0 = ExtResource("3_hx188")
 
