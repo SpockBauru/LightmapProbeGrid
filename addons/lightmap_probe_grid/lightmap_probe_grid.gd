@@ -229,7 +229,7 @@ func add_GPU_raycaster(probe: Node3D) -> void:
 	depth_mesh.size = Vector2.ONE * 0.001
 	camera_3d.add_child(depth_filter)
 	depth_filter.set_owner(root_node)
-	depth_filter.position = Vector3(0.,0., -0.002)
+	depth_filter.position = Vector3(0, 0, -0.002)
 	depth_filter.rotation = Vector3.ZERO
 
 
