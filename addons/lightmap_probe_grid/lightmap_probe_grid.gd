@@ -144,26 +144,19 @@ func generate_probes() -> void:
 	var probes_positions: Array[Vector3] = []
 	var probes_names: Array[String] = []
 	
-	var probes_x: float = probes_number.x
-	var probes_y: float = probes_number.y
-	var probes_z: float = probes_number.z
-	
 	# Distance between probes
-	var step_x: float = size.x / (probes_x - 1)
-	var step_y: float = size.y / (probes_y - 1)
-	var step_z: float = size.z / (probes_z - 1)
+	# step = size / (probes_number - 1)
+	var step: Vector3 = size / Vector3(probes_number - Vector3i.ONE)
 	
 	# Starting relative positions
 	var start_position: Vector3 = Vector3.ONE * size / 2.0
 	var current_position: Vector3 = Vector3.ZERO
 	
 	# Defining Probes relative positions and names
-	for x: float in probes_x:
-		for y: float in probes_y:
-			for z: float in probes_z:
-				current_position.x = start_position.x - step_x * x
-				current_position.y = start_position.y - step_y * y
-				current_position.z = start_position.z - step_z * z
+	for x: float in probes_number.x:
+		for y: float in probes_number.y:
+			for z: float in probes_number.z:
+				current_position = start_position - step * Vector3(x, y, z)
 				probes_positions.append(current_position)
 				probes_names.append("LightmapProbe %.f, %.f, %.f" % [x, y, z])
 	

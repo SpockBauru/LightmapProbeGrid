@@ -43,7 +43,6 @@ environment = SubResource("Environment_ecbum")
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 119.926, 0.0420035, -0.851729)
 
 [node name="terrain" parent="." instance=ExtResource("3_ryaui")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
 
 [node name="LightmapGI" type="LightmapGI" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.59082, 0, -32.2009)

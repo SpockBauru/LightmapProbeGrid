@@ -6,6 +6,7 @@
 [ext_resource type="Material" uid="uid://dmbuo5llrwjel" path="res://DemoScene/Terrain/materials/asphalt.tres" id="4_2ea3l"]
 
 [node name="terrain" instance=ExtResource("1_f1x73")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
 
 [node name="Terrain" parent="." index="0"]
 gi_lightmap_scale = 3
