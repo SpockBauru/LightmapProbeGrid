@@ -25,8 +25,10 @@ Thanks to [dwarfses](https://twitter.com/dwarfses/status/1731691097263362513), L
 
 NOTE: The Cull Mask from v1.0 is not compatible with v2.0.
 
+v2.1 includes support for Godot 4.3
+
 # How to install
-1) Download the file `LightmapProbeGrid_v2.0.zip` from the [Download Page](https://github.com/SpockBauru/LightmapProbeGrid/releases)
+1) Download the file `LightmapProbeGrid_v2.1.zip` from the [Download Page](https://github.com/SpockBauru/LightmapProbeGrid/releases)
 2) Extract the `addons` folder on the root of your project (`res://`). Other files/folders are optional.
 3) Go to Godot's "Project" menu -> "Project Settings" -> "Plugins" tab -> enable "LightmapProbeGrid".
 4) Restart Godot.
@@ -70,6 +72,9 @@ LightmapProbeGrid is compatible with Godot 4.2 and there are plans to continue s
 This tool was entirely made on my free time. If you want to support me, please make an awesome asset and publish for free to the community!
 
 # Changelog
+v2.1:
+- Support for Godot 4.3
+
 v2.0:
 - Major changes: now uses GPU Raycast instead of Physics raycast
 - This means that colliders are not needed anymore!

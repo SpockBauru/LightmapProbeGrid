@@ -40,6 +40,8 @@ var object_size: float = 1
 
 var gizmo_lines: PackedVector3Array = []
 
+var godot_version: int = Engine.get_version_info().hex
+
 
 func _get_property_list() -> Array[Dictionary]:
 	var properties: Array[Dictionary] = []
@@ -299,6 +301,11 @@ func cut_obstructed() -> void:
 	# Cutting probes
 	for i in range(subViewport_array.size()):
 		var result: float = results_array[i]
+		
+		# On Godot 4.3+, the depth texture was inverted
+		if godot_version >= 0x040300:
+			result = 1.0 - result
+
 		if result < 1.0:
 			var probe = probes_array[i]
 			probe.queue_free()
@@ -365,6 +372,11 @@ func cut_far() -> void:
 			var color: Color = texture.get_pixel(0,0)
 			var colorValue: float = color.r
 			var result: float = colorValue
+			
+			# On Godot 4.3+, the depth texture was inverted
+			if godot_version >= 0x040300:
+				result = 1.0 - result
+			
 			if result < 1.0:
 				collisions_number[i] += 1
 	
@@ -431,6 +443,11 @@ func cut_inside() -> void:
 			var color: Color = texture.get_pixel(0,0)
 			var colorValue: float = color.r
 			var result: float = colorValue
+			
+			# On Godot 4.3+, the depth texture was inverted
+			if godot_version >= 0x040300:
+				result = 1.0 - result
+			
 			if result < 1.0:
 				collisions_number[i] += 1
 	
