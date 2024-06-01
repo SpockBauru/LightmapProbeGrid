@@ -3,7 +3,7 @@ Create a grid of Lightmap Probes and cut unwanted ones!
 
 LightmapProbeGrid is an extension for [Godot Engine](https://godotengine.org/) that helps on the demanding task of placing Lightmap Probes where LightmapGI fails to do it.
 
-**Disclaimer:** If you are getting the error `scene/3d/lightmap_gi.cpp:529 - Inconsistency found in triangulation...` is because [Godot Issue 82642](https://github.com/godotengine/godot/issues/82642). If you have the knowledge, would you kindly contrubute to fix the issue please? \o/
+**Disclaimer:** If you are getting the error `scene/3d/lightmap_gi.cpp:529 - Inconsistency found in triangulation...` is because [Godot Issue 82642](https://github.com/godotengine/godot/issues/82642). It was fixed on Godot 4.3.
 
 ### Video Tutorial
 https://www.youtube.com/watch?v=HzZSQ0BPpuk
