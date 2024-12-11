@@ -68,11 +68,17 @@ func _get_property_list() -> Array[Dictionary]:
 
 
 func _enter_tree() -> void:
+	if not Engine.is_editor_hint():
+		return
+	
 	if get_child_count() < 1:
 		generate_probes()
 
 
 func _ready() -> void:
+	if not Engine.is_editor_hint():
+		return
+	
 	size_changed.connect(scale_probes)
 	set_notify_local_transform(true)
 	old_size = size
