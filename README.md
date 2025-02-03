@@ -1,5 +1,7 @@
 # LightmapProbeGrid
-![LightmapProbeGrid](https://github.com/user-attachments/assets/8d94f78a-b288-44a5-9050-fc3e8c266bb0)
+<p align="center" width="100%">
+  <img width="600px" src="https://github.com/user-attachments/assets/8d94f78a-b288-44a5-9050-fc3e8c266bb0">
+</p>
 
 
 Create a grid of Lightmap Probes and cut unwanted ones!
@@ -50,15 +52,30 @@ This method is designed to cut probes that are placed beyond visual limits such 
 
 On LightmapProbeGrid Inscpector click on "Cut Obstructed Probes". It will test each Light Probe from the center of the grid to the probe and see if the line intercepts an object. The probe will be cut if there's something blocking the line.
 
+<p align="center" width="100%">
+  <img width="600px" src="https://github.com/user-attachments/assets/c03287bc-630e-48ce-ab58-8aacbe6f44ac">
+</p>
+
+
 ## Cut probes inside objects
 This method is designed to delete probes that are inside objects. It will test all 6 axis of each Light Probe: Up, Down, Left, Right, Forward and Backward by the distance indicated in `Max Object Size`. 
 
 If at least 4 of these lines hit something the probe will be cut. It considers only 4 hits to cut probes on long objects like pillars and trees.
 
+<p align="center" width="100%">
+  <img width="450px" src="https://github.com/user-attachments/assets/4d11293d-a129-4f4f-af84-75552cdc113a">
+</p>
+
+
 ## Cut probes far from objects
 This method is designed to delete probes that are far away from any object. Normally these probes don't contain any relevant light information but use with care in places that have a high usage of spotlights.
 
 When you click the button the area around the Light Probe is tested on various directions by the distance indicated in `Max Distance`. The probe will be cut if none of the rays intercept an object.
+
+<p align="center" width="100%">
+  <img width="600px" src="https://github.com/user-attachments/assets/c2195e0c-efcc-4965-80fc-0b393231e2e5">
+</p>
+
 
 ## Using masks
 You can select which 3D render layers LightmapProbeGrid will interact on the section Visual Cull Mask. Only selected layers will be used on detection for the Cut methods above.
