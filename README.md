@@ -1,4 +1,7 @@
 # LightmapProbeGrid
+![LightmapProbeGrid](https://github.com/user-attachments/assets/8d94f78a-b288-44a5-9050-fc3e8c266bb0)
+
+
 Create a grid of Lightmap Probes and cut unwanted ones!
 
 LightmapProbeGrid is an extension for [Godot Engine](https://godotengine.org/) that helps on the demanding task of placing Lightmap Probes where LightmapGI fails to do it.
