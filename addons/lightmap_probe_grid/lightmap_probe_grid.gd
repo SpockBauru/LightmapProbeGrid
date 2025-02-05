@@ -234,7 +234,7 @@ func add_GPU_raycaster(probe: Node3D) -> void:
 	depth_filter.rotation = Vector3.ZERO
 
 
-func generate_probes_raycasters(distance: float) -> void:
+func generate_probes_raycasters() -> void:
 	for probe in get_children():
 		add_GPU_raycaster(probe)
 
@@ -265,7 +265,7 @@ func rotate_camera(camera: Camera3D, to: Vector3) -> void:
 # Shoot rays from the center to all the probes. If any object is detected so the probe is
 # obstructed and will be cut
 func cut_obstructed() -> void:
-	await generate_probes_raycasters(far_distance)
+	await generate_probes_raycasters()
 	
 	var probes_array: Array[LightmapProbe] = []
 	var camera_array: Array[Camera3D] = []
@@ -289,7 +289,7 @@ func cut_obstructed() -> void:
 		
 		camera.position = position
 		# The lenght of the "Ray"
-		camera.far = (probe_pos - position).length()
+		camera.far = maxf((probe_pos - position).length(), 0.0021)
 		# The direction of the "Ray"
 		rotate_camera(camera, probe_pos)
 		sub_viewport.render_target_update_mode = SubViewport.UPDATE_ONCE
@@ -324,7 +324,7 @@ func cut_obstructed() -> void:
 # Detect if the probe is far from any object. It will shoot rays on all 6 axis and 8 quadrants.
 # If there aren't any objects the probe will be cut
 func cut_far() -> void:
-	await generate_probes_raycasters(far_distance)
+	await generate_probes_raycasters()
 	
 	# 6 axis and 8 quadrants
 	var directions: Array[Vector3] = [
@@ -400,7 +400,7 @@ func cut_far() -> void:
 # Detect if probe is inside an object. It will shoot rays from all 6 axis to the probe. If at least
 # 4 are obstructed, the probe will be cut
 func cut_inside() -> void:
-	await generate_probes_raycasters(far_distance)
+	await generate_probes_raycasters()
 	
 	# 6 Axis
 	var axis: Array[Vector3] = [
@@ -466,4 +466,3 @@ func cut_inside() -> void:
 	
 	set_probes_number()
 	remove_probes_raycasters()
-
