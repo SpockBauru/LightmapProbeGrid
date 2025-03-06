@@ -7,13 +7,13 @@
 
 
 ## What is it?
-LightmapProbeGrid is a plugin for [Godot Engine](https://godotengine.org/) that helps on the demanding task of placing Lightmap Probes where LightmapGI fails to do it.
+LightmapProbeGrid is an extension for [Godot Engine](https://godotengine.org/) that helps on the demanding task of placing [Lightmap Probes](https://docs.godotengine.org/en/stable/classes/class_lightmapprobe.html) where [LightmapGI](https://docs.godotengine.org/en/stable/tutorials/3d/global_illumination/using_lightmap_gi.html#dynamic-objects) fails to do it.
 
 **Video Tutorial:** https://www.youtube.com/watch?v=HzZSQ0BPpuk
 
 
 ## How to install
-1) Download the file `LightmapProbeGrid_v2.1.zip` from the [Download Page](https://github.com/SpockBauru/LightmapProbeGrid/releases)
+1) Download the file `LightmapProbeGrid_v2.2.zip` from the [Download Page](https://github.com/SpockBauru/LightmapProbeGrid/releases)
 2) Extract the `addons` folder on the root of your project (`res://`). Other files/folders are optional.
 3) Go to Godot's "Project" menu -> "Project Settings" -> "Plugins" tab -> enable "LightmapProbeGrid".
 4) Restart Godot.
@@ -78,6 +78,9 @@ This tool was entirely made on my free time. If you want to support me, please m
 
 
 ## Changelog
+v2.2:
+- Support for Godot 4.4
+
 v2.1:
 - Support for Godot 4.3
 
