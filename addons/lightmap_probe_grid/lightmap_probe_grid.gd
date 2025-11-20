@@ -287,9 +287,9 @@ func cut_obstructed() -> void:
 		var probe_pos: Vector3 = probes_array[i].global_position
 		var sub_viewport: SubViewport = subViewport_array[i]
 		
-		camera.position = position
+		camera.position = global_position
 		# The lenght of the "Ray"
-		camera.far = maxf((probe_pos - position).length(), 0.0021)
+		camera.far = maxf((probe_pos - global_position).length(), 0.0021)
 		# The direction of the "Ray"
 		rotate_camera(camera, probe_pos)
 		sub_viewport.render_target_update_mode = SubViewport.UPDATE_ONCE
