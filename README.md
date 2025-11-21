@@ -13,7 +13,7 @@ LightmapProbeGrid is an extension for [Godot Engine](https://godotengine.org/) t
 
 
 ## How to install
-1) Download the file `LightmapProbeGrid_v2.2.zip` from the [Download Page](https://github.com/SpockBauru/LightmapProbeGrid/releases)
+1) Download the file `LightmapProbeGrid_v2.2.1.zip` from the [Download Page](https://github.com/SpockBauru/LightmapProbeGrid/releases)
 2) Extract the `addons` folder on the root of your project (`res://`). Other files/folders are optional.
 3) Go to Godot's "Project" menu -> "Project Settings" -> "Plugins" tab -> enable "LightmapProbeGrid".
 4) Restart Godot.
@@ -78,6 +78,9 @@ This tool was entirely made on my free time. If you want to support me, please m
 
 
 ## Changelog
+v2.2.1
+- Fixed bug in "Cut Obstructed Probes"
+
 v2.2:
 - Support for Godot 4.4
 
