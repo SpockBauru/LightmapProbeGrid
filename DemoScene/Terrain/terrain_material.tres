@@ -1,0 +1,59 @@
+[gd_resource type="ShaderMaterial" load_steps=11 format=3 uid="uid://bcohw75utwu03"]
+
+[ext_resource type="Shader" path="res://DemoScene/Terrain/terrain.gdshader" id="1_3x5fw"]
+
+[sub_resource type="Gradient" id="Gradient_o0e08"]
+offsets = PackedFloat32Array(0.137546, 0.49, 0.5, 0.51, 1)
+colors = PackedColorArray(0.3, 0.2727, 0.066, 1, 0.327992, 0.383208, 0.142714, 1, 1, 1, 1, 1, 0.329731, 0.390074, 0.14748, 1, 0.370242, 0.55, 0.2585, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_korai"]
+frequency = 0.02
+fractal_gain = 1.0
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_oljpn"]
+seamless = true
+color_ramp = SubResource("Gradient_o0e08")
+noise = SubResource("FastNoiseLite_korai")
+
+[sub_resource type="Gradient" id="Gradient_tprtu"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_tci75"]
+seamless = true
+as_normal_map = true
+color_ramp = SubResource("Gradient_tprtu")
+noise = SubResource("FastNoiseLite_korai")
+
+[sub_resource type="Gradient" id="Gradient_wmgr7"]
+colors = PackedColorArray(0.75, 0.75, 0.75, 1, 0.14, 0.14, 0.14, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_gwdus"]
+noise_type = 2
+frequency = 0.0155
+fractal_gain = 1.0
+cellular_return_type = 0
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_nj1ny"]
+seamless = true
+color_ramp = SubResource("Gradient_wmgr7")
+noise = SubResource("FastNoiseLite_gwdus")
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_hyfyf"]
+seamless = true
+as_normal_map = true
+bump_strength = 16.0
+color_ramp = SubResource("Gradient_wmgr7")
+noise = SubResource("FastNoiseLite_gwdus")
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_3x5fw")
+shader_parameter/ground_strenght = 3.0
+shader_parameter/ground_scale = Vector2(0.2, 0.2)
+shader_parameter/ground_normal_map_strenght = 1.0
+shader_parameter/ground_albedo = SubResource("NoiseTexture2D_oljpn")
+shader_parameter/ground_normal_map = SubResource("NoiseTexture2D_tci75")
+shader_parameter/wall_strenght = 2.0
+shader_parameter/wall_scale = Vector2(0.04, 0.04)
+shader_parameter/wall_normal_map_strenght = 1.0
+shader_parameter/wall_albedo = SubResource("NoiseTexture2D_nj1ny")
+shader_parameter/wall_normal_map = SubResource("NoiseTexture2D_hyfyf")

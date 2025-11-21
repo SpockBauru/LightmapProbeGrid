@@ -4,7 +4,6 @@ extends CharacterBody3D
 @export var animation_tree: AnimationTree
 @export var camera: Node3D
 @export var speed: float= 3
-@export var jump_velocity: float = 5
 @export var mouse_sensitivity: float = .002
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -52,19 +51,11 @@ func _physics_process(delta: float) -> void:
 	# Reset animation state
 	animation_tree["parameters/conditions/is_idle"] = false
 	animation_tree["parameters/conditions/is_running"] = false
-	animation_tree["parameters/conditions/is_jumping"] = false
 	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y -= gravity * delta
-		animation_tree["parameters/conditions/is_jumping"] = true
 		move_and_slide()
-		return
-	
-	# Handle jump
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = jump_velocity
-		animation_tree["parameters/conditions/is_jumping"] = true
 		return
 	
 	# Get the input direction and handle the movement/deceleration.
@@ -94,10 +85,7 @@ func _physics_process(delta: float) -> void:
 	
 	move_and_slide()
 	
-	
 	# If stop in the wall
 	if abs(velocity) < Vector3(0.001, 0.001, 0.001):
 		animation_tree["parameters/conditions/is_idle"] = true
 		animation_tree["parameters/conditions/is_running"] = false
-		animation_tree["parameters/conditions/is_jumping"] = false
-
