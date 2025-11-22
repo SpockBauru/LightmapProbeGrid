@@ -80,6 +80,7 @@ This tool was entirely made on my free time. If you want to support me, please m
 ## Changelog
 v2.2.1
 - Fixed bug in "Cut Obstructed Probes"
+- Demo Scene full overhaul
 
 v2.2:
 - Support for Godot 4.4
