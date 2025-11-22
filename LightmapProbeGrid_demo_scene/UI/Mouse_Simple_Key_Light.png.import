@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2ioris7xltl6"
-path="res://.godot/imported/Mouse_Simple_Key_Light.png-09a6bda4bd729a9cb7acec0edeb1461f.ctex"
+path="res://.godot/imported/Mouse_Simple_Key_Light.png-19a2a7a07b0a30379bd6fb41f7dc0783.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DemoScene/UI/Mouse_Simple_Key_Light.png"
-dest_files=["res://.godot/imported/Mouse_Simple_Key_Light.png-09a6bda4bd729a9cb7acec0edeb1461f.ctex"]
+source_file="res://LightmapProbeGrid_demo_scene/UI/Mouse_Simple_Key_Light.png"
+dest_files=["res://.godot/imported/Mouse_Simple_Key_Light.png-19a2a7a07b0a30379bd6fb41f7dc0783.ctex"]
 
 [params]
 

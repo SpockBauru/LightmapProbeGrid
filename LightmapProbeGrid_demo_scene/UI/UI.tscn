@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://hpwo6n675tni"]
 
-[ext_resource type="Texture2D" uid="uid://j48u112bqt6j" path="res://DemoScene/UI/Arrow_Up_Key_Light.png" id="1_hfvlm"]
-[ext_resource type="Texture2D" uid="uid://d2ioris7xltl6" path="res://DemoScene/UI/Mouse_Simple_Key_Light.png" id="7_i31wf"]
+[ext_resource type="Texture2D" uid="uid://j48u112bqt6j" path="res://LightmapProbeGrid_demo_scene/UI/Arrow_Up_Key_Light.png" id="1_hfvlm"]
+[ext_resource type="Texture2D" uid="uid://d2ioris7xltl6" path="res://LightmapProbeGrid_demo_scene/UI/Mouse_Simple_Key_Light.png" id="7_i31wf"]
 
 [node name="UI" type="Control"]
 layout_mode = 3

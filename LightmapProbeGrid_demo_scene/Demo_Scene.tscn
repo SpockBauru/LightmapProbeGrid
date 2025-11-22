@@ -1,9 +1,9 @@
 [gd_scene load_steps=12 format=3 uid="uid://fhgmqe7732jp"]
 
-[ext_resource type="PackedScene" uid="uid://hpwo6n675tni" path="res://DemoScene/UI/UI.tscn" id="1_p111l"]
-[ext_resource type="PackedScene" uid="uid://cvi1hqijjf348" path="res://DemoScene/Godette/godette.tscn" id="2_lrkjj"]
-[ext_resource type="PackedScene" uid="uid://cpbw4v3g3hncf" path="res://DemoScene/Terrain/terrain.tscn" id="3_ryaui"]
-[ext_resource type="PackedScene" uid="uid://6ltajfnykfr8" path="res://DemoScene/Trees/tree_01.tscn" id="4_e6kl4"]
+[ext_resource type="PackedScene" uid="uid://hpwo6n675tni" path="res://LightmapProbeGrid_demo_scene/UI/UI.tscn" id="1_p111l"]
+[ext_resource type="PackedScene" uid="uid://cvi1hqijjf348" path="res://LightmapProbeGrid_demo_scene/Godette/godette.tscn" id="2_lrkjj"]
+[ext_resource type="PackedScene" uid="uid://cpbw4v3g3hncf" path="res://LightmapProbeGrid_demo_scene/Terrain/terrain.tscn" id="3_ryaui"]
+[ext_resource type="PackedScene" uid="uid://6ltajfnykfr8" path="res://LightmapProbeGrid_demo_scene/Trees/tree_01.tscn" id="4_e6kl4"]
 [ext_resource type="Script" path="res://addons/lightmap_probe_grid/lightmap_probe_grid.gd" id="5_678oq"]
 
 [sub_resource type="Gradient" id="Gradient_p1fkt"]

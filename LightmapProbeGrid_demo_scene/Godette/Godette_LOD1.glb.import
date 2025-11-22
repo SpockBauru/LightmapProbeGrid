@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bknaw8arukoap"
-path="res://.godot/imported/Godette_LOD1.glb-8b74c0c7f05fdbb75f8890a50e108f1a.scn"
+path="res://.godot/imported/Godette_LOD1.glb-b4a910886f933727ee851928816f240c.scn"
 
 [deps]
 
-source_file="res://DemoScene/Godette/Godette_LOD1.glb"
-dest_files=["res://.godot/imported/Godette_LOD1.glb-8b74c0c7f05fdbb75f8890a50e108f1a.scn"]
+source_file="res://LightmapProbeGrid_demo_scene/Godette/Godette_LOD1.glb"
+dest_files=["res://.godot/imported/Godette_LOD1.glb-b4a910886f933727ee851928816f240c.scn"]
 
 [params]
 

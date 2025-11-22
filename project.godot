@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Lightmap Probe Grid"
-run/main_scene="res://DemoScene/Demo_Scene.tscn"
+run/main_scene="res://LightmapProbeGrid_demo_scene/Demo_Scene.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 
 [display]

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dye0pl8gq2a8y"
-path="res://.godot/imported/tree_01.glb-1270afdd5d9579b80adff2f0379fbfa6.scn"
+path="res://.godot/imported/tree_01.glb-a84d6a050abfe26ba925e8ac9ce56908.scn"
 
 [deps]
 
-source_file="res://DemoScene/Trees/tree_01.glb"
-dest_files=["res://.godot/imported/tree_01.glb-1270afdd5d9579b80adff2f0379fbfa6.scn"]
+source_file="res://LightmapProbeGrid_demo_scene/Trees/tree_01.glb"
+dest_files=["res://.godot/imported/tree_01.glb-a84d6a050abfe26ba925e8ac9ce56908.scn"]
 
 [params]
 

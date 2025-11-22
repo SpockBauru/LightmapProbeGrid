@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://cpbw4v3g3hncf"]
 
-[ext_resource type="PackedScene" uid="uid://dnk2gtokfweh4" path="res://DemoScene/Terrain/terrain_mesh.glb" id="1_f1x73"]
-[ext_resource type="Material" uid="uid://bcohw75utwu03" path="res://DemoScene/Terrain/terrain_material.tres" id="2_kpn6t"]
-[ext_resource type="Material" uid="uid://cddgywwfqcmfn" path="res://DemoScene/Terrain/stone_wall_material.tres" id="3_bdm70"]
-[ext_resource type="Material" uid="uid://dmbuo5llrwjel" path="res://DemoScene/Terrain/asphalt_material.tres" id="4_sxov4"]
+[ext_resource type="PackedScene" uid="uid://dnk2gtokfweh4" path="res://LightmapProbeGrid_demo_scene/Terrain/terrain_mesh.glb" id="1_f1x73"]
+[ext_resource type="Material" uid="uid://bcohw75utwu03" path="res://LightmapProbeGrid_demo_scene/Terrain/terrain_material.tres" id="2_kpn6t"]
+[ext_resource type="Material" uid="uid://cddgywwfqcmfn" path="res://LightmapProbeGrid_demo_scene/Terrain/stone_wall_material.tres" id="3_bdm70"]
+[ext_resource type="Material" uid="uid://dmbuo5llrwjel" path="res://LightmapProbeGrid_demo_scene/Terrain/asphalt_material.tres" id="4_sxov4"]
 
 [node name="terrain" instance=ExtResource("1_f1x73")]
 

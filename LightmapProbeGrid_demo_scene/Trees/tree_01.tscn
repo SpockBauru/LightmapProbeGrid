@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://6ltajfnykfr8"]
 
-[ext_resource type="PackedScene" uid="uid://dye0pl8gq2a8y" path="res://DemoScene/Trees/tree_01.glb" id="1_2uydd"]
-[ext_resource type="Material" uid="uid://q8bar3k64c24" path="res://DemoScene/Trees/leaves_material.tres" id="2_vux3u"]
-[ext_resource type="Material" uid="uid://d1q8ejswl84j7" path="res://DemoScene/Trees/bark_material.tres" id="3_klsik"]
+[ext_resource type="PackedScene" uid="uid://dye0pl8gq2a8y" path="res://LightmapProbeGrid_demo_scene/Trees/tree_01.glb" id="1_2uydd"]
+[ext_resource type="Material" uid="uid://q8bar3k64c24" path="res://LightmapProbeGrid_demo_scene/Trees/leaves_material.tres" id="2_vux3u"]
+[ext_resource type="Material" uid="uid://d1q8ejswl84j7" path="res://LightmapProbeGrid_demo_scene/Trees/bark_material.tres" id="3_klsik"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ax511"]
 radius = 0.695963

@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=11 format=3 uid="uid://bcohw75utwu03"]
 
-[ext_resource type="Shader" path="res://DemoScene/Terrain/terrain.gdshader" id="1_3x5fw"]
+[ext_resource type="Shader" path="res://LightmapProbeGrid_demo_scene/Terrain/terrain.gdshader" id="1_3x5fw"]
 
 [sub_resource type="Gradient" id="Gradient_o0e08"]
 offsets = PackedFloat32Array(0.137546, 0.49, 0.5, 0.51, 1)

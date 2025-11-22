@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1733xyn6x5y7"
-path.s3tc="res://.godot/imported/Godette_baseColor.png-251dd344d4be20357b81891956408917.s3tc.ctex"
+path.s3tc="res://.godot/imported/Godette_baseColor.png-b0222325499adb3e1fe3ae97e91e7b01.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://DemoScene/Godette/Godette_baseColor.png"
-dest_files=["res://.godot/imported/Godette_baseColor.png-251dd344d4be20357b81891956408917.s3tc.ctex"]
+source_file="res://LightmapProbeGrid_demo_scene/Godette/Godette_baseColor.png"
+dest_files=["res://.godot/imported/Godette_baseColor.png-b0222325499adb3e1fe3ae97e91e7b01.s3tc.ctex"]
 
 [params]
 

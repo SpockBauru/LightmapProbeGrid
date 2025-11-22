@@ -1,8 +1,8 @@
 [gd_scene load_steps=11 format=3 uid="uid://cvi1hqijjf348"]
 
-[ext_resource type="PackedScene" uid="uid://bknaw8arukoap" path="res://DemoScene/Godette/Godette_LOD1.glb" id="1_kwwcx"]
-[ext_resource type="Script" path="res://DemoScene/Scripts/player_controller.gd" id="2_0oi61"]
-[ext_resource type="Material" uid="uid://dphn442gxhupy" path="res://DemoScene/Godette/godette_material.tres" id="3_hx188"]
+[ext_resource type="PackedScene" uid="uid://bknaw8arukoap" path="res://LightmapProbeGrid_demo_scene/Godette/Godette_LOD1.glb" id="1_kwwcx"]
+[ext_resource type="Script" path="res://LightmapProbeGrid_demo_scene/Scripts/player_controller.gd" id="2_0oi61"]
+[ext_resource type="Material" uid="uid://dphn442gxhupy" path="res://LightmapProbeGrid_demo_scene/Godette/godette_material.tres" id="3_hx188"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_j6yka"]
 radius = 0.469609

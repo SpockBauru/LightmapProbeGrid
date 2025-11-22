@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://j48u112bqt6j"
-path="res://.godot/imported/Arrow_Up_Key_Light.png-5b51224a7d49b123179950f4e097d221.ctex"
+path="res://.godot/imported/Arrow_Up_Key_Light.png-8ac6de4f136b2782babc04a8fe5dd62d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DemoScene/UI/Arrow_Up_Key_Light.png"
-dest_files=["res://.godot/imported/Arrow_Up_Key_Light.png-5b51224a7d49b123179950f4e097d221.ctex"]
+source_file="res://LightmapProbeGrid_demo_scene/UI/Arrow_Up_Key_Light.png"
+dest_files=["res://.godot/imported/Arrow_Up_Key_Light.png-8ac6de4f136b2782babc04a8fe5dd62d.ctex"]
 
 [params]
 
