@@ -5,5 +5,5 @@
 /**        export-ignore
 /addons    !export-ignore
 /addons/** !export-ignore
-/DemoScene    !export-ignore
-/DemoScene/**    !export-ignore
+/LightmapProbeGrid_demo_scene    !export-ignore
+/LightmapProbeGrid_demo_scene/**    !export-ignore
