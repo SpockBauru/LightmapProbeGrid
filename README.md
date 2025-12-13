@@ -36,7 +36,7 @@ Now you can cut unwanted probes with the methods bellow.
 
 This method is designed to cut probes that are placed beyond visual limits such as the ground or the walls of a cave. 
 
-On LightmapProbeGrid Inscpector click on "Cut Obstructed Probes". It will test each Light Probe from the center of the grid to the probe and see if the line intercepts an object. The probe will be cut if there's something blocking the line.
+On LightmapProbeGrid Inspector click on "Cut Obstructed Probes". It will test each Light Probe from the center of the grid to the probe and see if the line intercepts an object. The probe will be cut if there's something blocking the line.
 
 
 ### Cut probes inside objects
