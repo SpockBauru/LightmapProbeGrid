@@ -1,0 +1,56 @@
+[gd_scene load_steps=11 format=3 uid="uid://bdhphoires8k8"]
+
+[ext_resource type="PackedScene" uid="uid://dye0pl8gq2a8y" path="res://addons/demo_scene/tree_01.glb" id="1_flb2r"]
+
+[sub_resource type="Gradient" id="Gradient_in1eq"]
+offsets = PackedFloat32Array(0, 0.638037)
+colors = PackedColorArray(0, 0, 0, 1, 0.41, 0.315905, 0.2009, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_vq1bw"]
+frequency = 0.08
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_najun"]
+color_ramp = SubResource("Gradient_in1eq")
+noise = SubResource("FastNoiseLite_vq1bw")
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_kfxyj"]
+as_normal_map = true
+noise = SubResource("FastNoiseLite_vq1bw")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6ifl3"]
+albedo_texture = SubResource("NoiseTexture2D_najun")
+normal_enabled = true
+normal_texture = SubResource("NoiseTexture2D_kfxyj")
+uv1_scale = Vector3(5, 1, 1)
+
+[sub_resource type="Gradient" id="Gradient_lg5x5"]
+offsets = PackedFloat32Array(0, 0.360656, 0.508197, 0.786885)
+colors = PackedColorArray(0.035, 0.1, 0.04475, 1, 0.117984, 0.337097, 0.150851, 1, 0.14, 0.4, 0.179, 1, 0.729412, 0.654902, 0.560784, 0)
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_26nmv"]
+color_ramp = SubResource("Gradient_lg5x5")
+noise = SubResource("FastNoiseLite_vq1bw")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tciq1"]
+transparency = 2
+alpha_scissor_threshold = 0.8
+alpha_antialiasing_mode = 0
+albedo_color = Color(0.85, 0.85, 0.85, 1)
+albedo_texture = SubResource("NoiseTexture2D_26nmv")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1qqyo"]
+radius = 2.08083
+height = 9.15935
+
+[node name="tree_01" instance=ExtResource("1_flb2r")]
+
+[node name="tree-stylized-05-autumn-brown" parent="." index="0"]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, -0.35, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_6ifl3")
+surface_material_override/1 = SubResource("StandardMaterial3D_tciq1")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.291371, 1.7744, -0.409937)
+shape = SubResource("CapsuleShape3D_1qqyo")

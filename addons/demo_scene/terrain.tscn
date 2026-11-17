@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://cw4wvvdtpflma"]
+
+[ext_resource type="PackedScene" uid="uid://0xxmhqcoq1ng" path="res://addons/demo_scene/terrain_mesh.glb" id="1_e8d0l"]
+[ext_resource type="Material" uid="uid://crq00xp3x1uaf" path="res://addons/demo_scene/terraim_material.tres" id="2_c3dwt"]
+[ext_resource type="Material" uid="uid://clbp7x4eu7tjs" path="res://addons/demo_scene/asphalt_material.tres" id="3_iuwi1"]
+[ext_resource type="Material" uid="uid://d4h1itgc0evd6" path="res://addons/demo_scene/stone_wall_material.tres" id="4_c428o"]
+
+[node name="terrain_mesh" instance=ExtResource("1_e8d0l")]
+
+[node name="Terrain" parent="." index="0"]
+gi_lightmap_scale = 3
+surface_material_override/0 = ExtResource("2_c3dwt")
+
+[node name="Tunnel" parent="." index="1"]
+gi_lightmap_scale = 3
+surface_material_override/0 = ExtResource("3_iuwi1")
+surface_material_override/1 = ExtResource("4_c428o")

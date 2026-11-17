@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://hpwo6n675tni"]
+[gd_scene load_steps=3 format=3 uid="uid://bf0ro8id54c6u"]
 
-[ext_resource type="Texture2D" uid="uid://j48u112bqt6j" path="res://LightmapProbeGrid_demo_scene/UI/Arrow_Up_Key_Light.png" id="1_hfvlm"]
-[ext_resource type="Texture2D" uid="uid://d2ioris7xltl6" path="res://LightmapProbeGrid_demo_scene/UI/Mouse_Simple_Key_Light.png" id="7_i31wf"]
+[ext_resource type="Texture2D" uid="uid://ir0rb0bqne0r" path="res://addons/demo_scene/UI/Arrow_Up_Key_Light.png" id="1_t8ulc"]
+[ext_resource type="Texture2D" uid="uid://chrjbbafomnik" path="res://addons/demo_scene/UI/Mouse_Simple_Key_Light.png" id="2_3ayow"]
 
 [node name="UI" type="Control"]
 layout_mode = 3
@@ -56,7 +56,7 @@ offset_right = 176.0
 offset_bottom = -74.0
 grow_vertical = 0
 mouse_filter = 2
-texture = ExtResource("1_hfvlm")
+texture = ExtResource("1_t8ulc")
 
 [node name="Down" type="TextureRect" parent="."]
 layout_mode = 1
@@ -68,7 +68,7 @@ offset_top = -100.0
 offset_right = 175.0
 grow_vertical = 0
 mouse_filter = 2
-texture = ExtResource("1_hfvlm")
+texture = ExtResource("1_t8ulc")
 flip_v = true
 
 [node name="Left" type="TextureRect" parent="."]
@@ -82,7 +82,7 @@ offset_right = 200.0
 grow_vertical = 0
 rotation = 1.5708
 mouse_filter = 2
-texture = ExtResource("1_hfvlm")
+texture = ExtResource("1_t8ulc")
 flip_v = true
 
 [node name="Right" type="TextureRect" parent="."]
@@ -96,7 +96,7 @@ offset_bottom = 100.0
 grow_vertical = 0
 rotation = -1.5708
 mouse_filter = 2
-texture = ExtResource("1_hfvlm")
+texture = ExtResource("1_t8ulc")
 flip_v = true
 
 [node name="Camera" type="Label" parent="."]
@@ -118,4 +118,4 @@ offset_top = -114.0
 offset_right = 372.0
 offset_bottom = -14.0004
 grow_vertical = 0
-texture = ExtResource("7_i31wf")
+texture = ExtResource("2_3ayow")

@@ -1,7 +1,5 @@
 extends CharacterBody3D
 
-@export var character: Node3D
-@export var animation_tree: AnimationTree
 @export var camera: Node3D
 @export var speed: float= 3
 @export var mouse_sensitivity: float = .002
@@ -47,11 +45,7 @@ func _process(_delta: float) -> void:
 		position = initial_posision
 
 
-func _physics_process(delta: float) -> void:
-	# Reset animation state
-	animation_tree["parameters/conditions/is_idle"] = false
-	animation_tree["parameters/conditions/is_running"] = false
-	
+func _physics_process(delta: float) -> void:	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y -= gravity * delta
@@ -73,19 +67,9 @@ func _physics_process(delta: float) -> void:
 	if input_dir:
 		velocity.x = direction.x * speed
 		velocity.z = direction.z * speed
-		animation_tree["parameters/conditions/is_running"] = true
 		
-		# Rotate character to the direction
-		var rotation_y: float =  -direction.signed_angle_to(Vector3.FORWARD, Vector3.UP)
-		character.rotation.y = rotation_y - global_rotation.y
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
 		velocity.z = move_toward(velocity.z, 0, speed)
-		animation_tree["parameters/conditions/is_idle"] = true
 	
 	move_and_slide()
-	
-	# If stop in the wall
-	if abs(velocity) < Vector3(0.001, 0.001, 0.001):
-		animation_tree["parameters/conditions/is_idle"] = true
-		animation_tree["parameters/conditions/is_running"] = false
