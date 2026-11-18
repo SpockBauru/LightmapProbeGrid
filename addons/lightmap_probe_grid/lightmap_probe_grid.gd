@@ -153,11 +153,11 @@ func generate_probes() -> void:
 	var probes_names: Array[String] = []
 	
 	# Distance between probes
-	# step = size / (probes_number - 1)
-	var step: Vector3 = size / Vector3(probes_number - Vector3i.ONE)
+	# step = size / (probes_number)
+	var step: Vector3 = size / Vector3(probes_number)
 	
 	# Starting relative positions
-	var start_position: Vector3 = Vector3.ONE * size / 2.0
+	var start_position: Vector3 = Vector3.ONE * (size - step) / 2.0
 	var current_position: Vector3 = Vector3.ZERO
 	
 	# Defining Probes relative positions and names
